@@ -1,4 +1,5 @@
 import nltk
+from nltk.tag.simplify import simplify_wsj_tag
 
 
 class Parser:
@@ -13,7 +14,10 @@ class Parser:
             return [], []
 
         sentence_data = [sent for sent in self.sentence_tokenizer.tokenize(text)]
-        word_data = [(word, self.stemmer.stem(word), pos) for (word, pos) in nltk.pos_tag(nltk.word_tokenize(text))]
+        word_data = [
+            (word, self.stemmer.stem(word), simplify_wsj_tag(pos))
+            for (word, pos)
+            in nltk.pos_tag(nltk.word_tokenize(text))]
 
         return sentence_data, word_data
 
@@ -23,5 +27,4 @@ class NounResolutionStrategy:
         pass
 
     def resolve(self, taggedWords):
-        # TODO: use simplified tags
         return (word for (word, pos) in taggedWords if pos == 'NN')
