@@ -6,6 +6,9 @@ from pydispatch import dispatcher
 
 class NarrativeView(BoxLayout):
 
+    SIGNAL_TEXT_UPDATED = "textUpdated"
+    SIGNAL_TEXT_ENTERED = "textEntered"
+
     def __init__(self, **kwargs):
         super(NarrativeView, self).__init__(**kwargs)
 
@@ -13,10 +16,10 @@ class NarrativeView(BoxLayout):
         input = ObjectProperty(None)
 
     def on_enter(self, instance):
-        dispatcher.send(signal=self.SIGNAL_TEXT_VALIDATE, sender=self, instance.text)
+        dispatcher.send(signal=self.SIGNAL_TEXT_ENTERED, sender=self, text=instance.text)
 
     def on_input_change(self, instance, value):
-        dispatcher.send(signal=self.SIGNAL_TEXT_VALIDATE, sender=self, instance.text)
+        dispatcher.send(signal=self.SIGNAL_TEXT_UPDATED, sender=self, text=instance.text)
 
 
 class ParseView(BoxLayout):

@@ -27,43 +27,21 @@ import nltk
 # mapped to AAA. This keeps the vocabulary small and improves the
 # accuracy of many language modeling tasks.
 
+class POS:
+    NOUN = "noun"
+    VERB = "verb"
+
+
 class Entity:
-    def __init__(self, name):
+    def __init__(self, name, pos):
         self.name = name
-        self.stem = ''
         self.pos = ''
-        self.properties = []
 
 
 class Model:
-    taggedWords = []
-    sents = []
-    raw = ''
 
     def __init__(self):
-        self._stemmer = nltk.PorterStemmer()
-        self._sentTokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-
-    def processInput(self, str):
-        print ''
-
-        newSents = [self.prepSent(sent) for sent in self._sentTokenizer.tokenize(str)]
-        newTaggedWords = [self.prepWord((word, pos)) for (word, pos) in nltk.pos_tag(nltk.word_tokenize(str))]
-
-        self.sents = self.sents + newSents
-        self.taggedWords = self.taggedWords + newTaggedWords
-        self.raw = self.raw + str
-
-        print self.generateResponse(str, newSents, newTaggedWords)
-
-        print ''
-
-    def generateResponse(self, newRaw, newSents, newTaggedWords):
-        return ['{0} => {1}'.format(word, tag) for (word, tag) in newTaggedWords]
-
-    def prepWord(self, (word, tag)):
-        taggedTokens = (self._stemmer.stem(word.lower()), tag)
-        return taggedTokens
-
-    def prepSent(self, sent):
-        return sent.lower()
+        self.tagged_words = []
+        self.sentences = []
+        self.raw = ''
+        self.entities = []
