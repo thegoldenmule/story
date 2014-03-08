@@ -1,47 +1,45 @@
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.label import Label
-from kivy.uix.textinput import TextInput
 from kivy.properties import ObjectProperty
+
+from pydispatch import dispatcher
 
 
 class NarrativeView(BoxLayout):
-    _output = ObjectProperty(None)
-    _input = ObjectProperty(None)
 
-    colorComputer = '4444aa'
-    colorUser = '44aa44'
-    colorInputBG = '444444'
+    def __init__(self, **kwargs):
+        super(NarrativeView, self).__init__(**kwargs)
 
-    def addUserMessage(self, message):
-        self.addMessage(message, self.colorUser)
-
-    def addComputerMessage(self, message):
-        self.addMessage(message, self.colorComputer)
-
-    def addMessage(self, message, color):
-        self._output.text += '\n[color={}]{}[/color]'.format(color, message)
+        output = ObjectProperty(None)
+        input = ObjectProperty(None)
 
     def on_enter(self, instance):
-        print "enter"
-        self.addUserMessage(instance.text)
-
-        instance.text = ''
-        instance.focus = True
+        dispatcher.send(signal=self.SIGNAL_TEXT_VALIDATE, sender=self, instance.text)
 
     def on_input_change(self, instance, value):
-        print 'Analyze ' + value
+        dispatcher.send(signal=self.SIGNAL_TEXT_VALIDATE, sender=self, instance.text)
 
 
 class ParseView(BoxLayout):
-    _content = ObjectProperty(None)
 
     def __init__(self, **kwargs):
         super(ParseView, self).__init__(**kwargs)
 
+        self.content = ObjectProperty(None)
+
+
+class MemoryView(BoxLayout):
+
+    def __init(self, **kwargs):
+        super(MemoryView, self).__init__(**kwargs)
+
+        self.content = ObjectProperty(None)
+
 
 class MainWindow(BoxLayout):
-    _narrativeView = ObjectProperty(None)
-    _parseView = ObjectProperty(None)
 
     def __init__(self, **kwargs):
         super(MainWindow, self).__init__(**kwargs)
+
+        narrativeView = ObjectProperty(None)
+        parseView = ObjectProperty(None)
+        memoryView = ObjectProperty(None)

@@ -1,5 +1,7 @@
 from kivy.app import App
+
 import windows
+import models
 
 class StoryApp(App):
     def build(self):

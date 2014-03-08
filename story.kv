@@ -1,39 +1,17 @@
 ﻿#:kivy 1.8
 
 <NarrativeView>
-    _output: text_content
-    _input: text_input
+    output: text_content
+    input: text_input
 
     BoxLayout:
         orientation: 'vertical'
 
         Label:
-            id: text_content
-            size_hint: (1, .9)
-            font_size: 16
-            markup: True
-            halign:'left'
-            valign:'top'
-            text_size: self.size
-            text: 'Testing'
-
-        TextInput:
-            id: text_input
-            font_size: 16
-            size_hint_x: 1
-            size_hint_y: None
-            height: 30
-            multiline: False,
-            background_color: .25, .25, .25
-            focus: True
-            on_text: root.on_input_change(args[0], args[1])
-            on_text_validate: print(args[0])
-
-<ParseView>
-    _content: text_content
-
-    BoxLayout:
-        orientation: 'vertical'
+            text: 'Narrative'
+            size_hint: (None, None)
+            font_size: 18
+            height: 20
 
         Label:
             id: text_content
@@ -43,11 +21,65 @@
             halign:'left'
             valign:'top'
             text_size: self.size
-            text: 'Parse View'
+
+        TextInput:
+            id: text_input
+            font_size: 16
+            size_hint_x: 1
+            size_hint_y: None
+            height: 30
+            multiline: False
+            background_color: .25, .25, .25
+            focus: True
+            on_text: root.on_input_change(args[0], args[1])
+            on_text_validate: root.on_enter(args[0])
+
+<ParseView>
+    content: text_content
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text: 'Connection'
+            size_hint: (None, None)
+            font_size: 18
+            height: 20
+
+        Label:
+            id: text_content
+            size_hint: (1, 1)
+            font_size: 16
+            markup: True
+            halign:'left'
+            valign:'top'
+            text_size: self.size
+
+<MemoryView>
+    content: text_content
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text: 'Memory'
+            size_hint: (None, None)
+            font_size: 18
+            height: 20
+
+        Label:
+            id: text_content
+            size_hint: (1, 1)
+            font_size: 16
+            markup: True
+            halign:'left'
+            valign:'top'
+            text_size: self.size
 
 <MainWindow>
-    _narrativeView: narrative_view
-    _parseView: parse_view
+    narrativeView: narrative_view
+    parseView: parse_view
+    memoryView: memory_view
 
     orientation: 'horizontal'
 
@@ -55,3 +87,5 @@
         id: narrative_view
     ParseView:
         id: parse_view
+    MemoryView:
+        id: memory_view

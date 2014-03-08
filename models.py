@@ -20,12 +20,27 @@ import nltk
 #VN	    past participle     given, taken, begun, sung
 #WH	wh  determiner          who, which, when, what, where, how
 
-class Model:
-    def __init__(self):
-        self.taggedWords = []
-        self.sents = []
-        self.raw = ''
+# Another normalization task involves identifying non-standard words
+# including numbers, abbreviations, and dates, and mapping any such
+# tokens to a special vocabulary. For example, every decimal number
+# could be mapped to a single token 0.0, and every acronym could be
+# mapped to AAA. This keeps the vocabulary small and improves the
+# accuracy of many language modeling tasks.
 
+class Entity:
+    def __init__(self, name):
+        self.name = name
+        self.stem = ''
+        self.pos = ''
+        self.properties = []
+
+
+class Model:
+    taggedWords = []
+    sents = []
+    raw = ''
+
+    def __init__(self):
         self._stemmer = nltk.PorterStemmer()
         self._sentTokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
 
@@ -48,13 +63,6 @@ class Model:
 
     def prepWord(self, (word, tag)):
         taggedTokens = (self._stemmer.stem(word.lower()), tag)
-
-        # Another normalization task involves identifying non-standard words
-        # including numbers, abbreviations, and dates, and mapping any such
-        # tokens to a special vocabulary. For example, every decimal number
-        # could be mapped to a single token 0.0, and every acronym could be
-        # mapped to AAA. This keeps the vocabulary small and improves the
-        # accuracy of many language modeling tasks.
         return taggedTokens
 
     def prepSent(self, sent):
