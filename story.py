@@ -12,22 +12,26 @@ class StoryApp(App):
         super(StoryApp, self).__init__(**kwargs)
 
         self.model = models.Model()
+        self.parser = strategy.Parser()
         self.window = None
 
 
     def build(self):
         dispatcher.connect(
-            self.on_textchange,
+            self.on_text_change,
             signal=windows.NarrativeView.SIGNAL_TEXT_UPDATED,
             sender=dispatcher.Any
         )
 
-        window = windows.MainWindow()
+        self.window = windows.MainWindow()
 
-        return window
+        return self.window
 
-    def on_textchange(self, sender, text):
-        print text
+    def on_text_change(self, sender, text):
+        sentence_data, word_data = self.parser.parse(text)
+
+        #self.window.parseView.content.text = " ".join((word for (word, stem, pos) in word_data))
+        pass
 
 
 if __name__ == '__main__':

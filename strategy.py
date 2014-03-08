@@ -9,10 +9,18 @@ class Parser:
     # output:
     # ([sentence], [(word, stem, pos)])
     def parse(self, text):
-        sentence_data = [sent for sent in self.sentence_tokenizer.tokenize(str)]
-        word_data = [(word, self.stemmer.stem(word), pos) for (word, pos) in nltk.pos_tag(nltk.word_tokenize(str))]
+        if not text:
+            return [], []
 
-        return sentence_data, word_data
+        sentence_data = [sent for sent in self.sentence_tokenizer.tokenize(text)]
+
+        print text
+
+        nltk.word_tokenize(text)
+        #nltk.pos_tag(text)
+        #word_data = [(word, self.stemmer.stem(word), pos) for (word, pos) in nltk.pos_tag(nltk.word_tokenize(text))]
+
+        return sentence_data, []
 
 
 class NounResolutionStrategy:
