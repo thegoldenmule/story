@@ -28,61 +28,53 @@
     <favorites_list name="Story" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="story.py" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/story.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="43" selection-start="622" selection-end="622" vertical-scroll-proportion="0.7083333" vertical-offset="0" max-vertical-offset="646">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="story.kv" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/story.kv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="81" column="4" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1632">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="windows.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/windows.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="47" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="884">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="0" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="884">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="strategy.py" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/strategy.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="81" selection-start="391" selection-end="391" vertical-scroll-proportion="0.41319445" vertical-offset="0" max-vertical-offset="576">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="story.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/story.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="6" selection-start="135" selection-end="135" vertical-scroll-proportion="0.14834206" vertical-offset="0" max-vertical-offset="1020">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="story.kv" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/story.kv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="4" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1632">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="windows.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/windows.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="49" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strategy.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/strategy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="81" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -101,7 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/window.py" />
         <option value="$PROJECT_DIR$/story.kv" />
@@ -110,15 +101,15 @@
         <option value="$PROJECT_DIR$/windows.py" />
         <option value="$PROJECT_DIR$/doc/build.md" />
         <option value="$PROJECT_DIR$/strategy.py" />
+        <option value="$PROJECT_DIR$/doc/environment.md" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/story.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -375,18 +366,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14010416" sideWeight="0.66558444" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28495762" sideWeight="0.65969163" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33441558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34030837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -444,11 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="110" selection-end="110" vertical-scroll-proportion="0.09637188" vertical-offset="0" max-vertical-offset="882" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
@@ -464,27 +450,6 @@
     <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/robustapply.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.77504724" vertical-offset="542" max-vertical-offset="1071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/story.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="4" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/windows.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="47" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="884">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://C:/Kivy/Python27/Lib/site-packages/nltk/tag/__init__.py">
@@ -517,21 +482,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/environment.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="36" selection-start="957" selection-end="957" vertical-scroll-proportion="0.2951389" vertical-offset="0" max-vertical-offset="864">
+        <state line="15" column="4" selection-start="922" selection-end="922" vertical-scroll-proportion="0.44270834" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="165" selection-end="165" vertical-scroll-proportion="0.265625" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/windows.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/strategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="81" selection-start="391" selection-end="391" vertical-scroll-proportion="0.41319445" vertical-offset="0" max-vertical-offset="576">
+        <state line="14" column="81" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="49" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/story.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="4" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1632">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="43" selection-start="622" selection-end="622" vertical-scroll-proportion="0.7083333" vertical-offset="0" max-vertical-offset="646">
+        <state line="10" column="6" selection-start="135" selection-end="135" vertical-scroll-proportion="0.14834206" vertical-offset="0" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>

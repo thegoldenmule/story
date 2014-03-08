@@ -10,8 +10,8 @@
 * Download and install SciPy and NumPy Windows binaries [here](http://www.scipy.org/scipylib/download.html).
 * Install the Natural Language Toolkit [here](https://pypi.python.org/pypi/nltk).
 * Open a terminal and type:
-    ** python
-    ** import nltk
-    ** nltk.download()
-    ** When prompted, download 'all'
+    * python
+    * import nltk
+    * nltk.download()
+    * When prompted, download 'all'
 * You're done!
