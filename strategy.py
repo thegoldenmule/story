@@ -13,14 +13,9 @@ class Parser:
             return [], []
 
         sentence_data = [sent for sent in self.sentence_tokenizer.tokenize(text)]
+        word_data = [(word, self.stemmer.stem(word), pos) for (word, pos) in nltk.pos_tag(nltk.word_tokenize(text))]
 
-        print text
-
-        nltk.word_tokenize(text)
-        #nltk.pos_tag(text)
-        #word_data = [(word, self.stemmer.stem(word), pos) for (word, pos) in nltk.pos_tag(nltk.word_tokenize(text))]
-
-        return sentence_data, []
+        return sentence_data, word_data
 
 
 class NounResolutionStrategy:

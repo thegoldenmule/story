@@ -30,7 +30,7 @@ class StoryApp(App):
     def on_text_change(self, sender, text):
         sentence_data, word_data = self.parser.parse(text)
 
-        #self.window.parseView.content.text = " ".join((word for (word, stem, pos) in word_data))
+        self.window.parseView.content.text = " ".join(('{}:{} => {}\n'.format(word, stem, pos) for (word, stem, pos) in word_data))
         pass
 
 
