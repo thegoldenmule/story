@@ -18,10 +18,10 @@ class StoryApp(App):
         '('     : '[color=ff8000]{}[/color]',
         ')'     : '[color=ff8000]{}[/color]',
         'CNJ'   : unimportant_style,                          # conjunction - and, or, but, if, while, although
-        'NUM'   : '[color=ff00cc]{}[/color]',             # number - twenty-four, fourth, 1991, 14:24
+        'NUM'   : '[color=ff00cc]{}[/color]',                 # number - twenty-four, fourth, 1991, 14:24
         'DET'   : unimportant_style,                          # determiner - the, a, some, most, every, no
         'EX'    : unimportant_style,                          # existential - there, there's
-        'FW'    : '[i][color=9900cc]{}[/color][/i]',      # foreign word - dolce, ersatz, esprit, quo, maitre
+        'FW'    : '[i][color=9900cc]{}[/color][/i]',          # foreign word - dolce, ersatz, esprit, quo, maitre
         'P'     : unimportant_style,                          # preposition - on, of, at, with, by, into, under
         'ADJ'   : adjective_style,                            # adjective - new, good, high, special, big, local
         'L'     : unimportant_style,                          # ?
@@ -32,7 +32,7 @@ class StoryApp(App):
         'ADV'   : adverb_style,                               # adverb - really, already, still, early, now
         'S'     : unimportant_style,                          # ?
         'TO'    : unimportant_style,                          # the word to - to
-        'UH'    : '[color=ff3300]{}[/color]',             # interjection - ah, bang, ha, whee, hmpf, oops
+        'UH'    : '[color=ff3300]{}[/color]',                 # interjection - ah, bang, ha, whee, hmpf, oops
         'V'     : verb_style,                                 # verb - is, has, get, do, make, see, run
         'VD'    : verb_style,                                 # past tense - said, took, told, made, asked
         'VG'    : verb_style,                                 # present participle - making, going, playing, working
@@ -46,7 +46,6 @@ class StoryApp(App):
         self.model = models.Model()
         self.parser = strategy.Parser()
         self.window = None
-
 
     def build(self):
         dispatcher.connect(

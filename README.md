@@ -1,9 +1,13 @@
 Story
 ==========
 
-Story is a research project. There's not much else to say.
+Story is a research project that leverages the [Natural Language Toolkit](http://www.nltk.org/) and machine learning
+techniques for gaming. The goal is to use natural language input to describe an environment to a computer, which then
+makes choices about how to use the environment to accomplish some goal.
 
-Let's write something beautiful.
+### Reading
+---
+[Natural Language Processing with Python](http://www.nltk.org/book/) (O'Reilly)
 
 ### Documentation
 ---

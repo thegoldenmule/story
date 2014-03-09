@@ -17,6 +17,7 @@ class Parser:
         word_data = [
             (word, self.stemmer.stem(word), simplify_wsj_tag(pos))
             for (word, pos)
+            # todo: use default tagger for unknown words
             in nltk.pos_tag(nltk.word_tokenize(text))]
 
         return sentence_data, word_data
