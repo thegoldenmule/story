@@ -1,5 +1,6 @@
 from kivy.app import App
 from pydispatch import dispatcher
+from nltk.corpus import conll2000
 
 import windows
 import models
@@ -45,6 +46,9 @@ class StoryApp(App):
 
         self.model = models.Model()
         self.parser = strategy.Parser()
+
+        #train_sentences = conll2000.chunked_sents('train.txt', chunk_types=['NP'])
+        #self.chunker = strategy.ConsecutiveNPChunker(train_sentences)
         self.window = None
 
     def build(self):
@@ -64,6 +68,7 @@ class StoryApp(App):
         self.window.parseView.content.text = " ".join(
             (self.style_for(pos).format(word)
              for (word, stem, pos) in word_data))
+
         pass
 
     def style_for(self, pos):

@@ -41,7 +41,7 @@ class ConsecutiveNPChunkTagger(nltk.TaggerI):
             history = []
             for i, (word, tag) in enumerate(tagged_sent):
                 featureset = self.features(untagged_sent, i, history)
-                train_set.append( (featureset, tag) )
+                train_set.append((featureset, tag))
                 history.append(tag)
         self.classifier = nltk.MaxentClassifier.train(
             train_set,
@@ -101,3 +101,15 @@ class ConsecutiveNPChunker(nltk.ChunkParserI):
         tagged_sentences = self.tagger.tag(sentence)
         conll_tags = [(word, tag, chunk) for ((word, tag), chunk) in tagged_sentences]
         return nltk.chunk.conlltags2tree(conll_tags)
+
+
+# Tests a chunking strategy by training and evaluating against conll data
+class ChunkStrategyTester():
+
+    def __init__(self):
+        self.test_sentences = conll2000.chunked_sents('test.txt', chunk_types=['NP'])
+        self.train_sentences = conll2000.chunked_sents('train.txt', chunk_types=['NP'])
+
+    def test(self, chunk_factory):
+        chunker = chunk_factory(self.train_sentences)
+        print chunker.evaluate(self.test_sentences)
