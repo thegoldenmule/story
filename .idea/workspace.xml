@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="story.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/story.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="3549" selection-end="3549" vertical-scroll-proportion="0.4906367" vertical-offset="928" max-vertical-offset="1462">
+            <state line="70" column="12" selection-start="3507" selection-end="3507" vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="1479">
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -89,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chunkers.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="chunkers.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chunkers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="2286" selection-end="2286" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="1768">
+            <state line="70" column="0" selection-start="2286" selection-end="2286" vertical-scroll-proportion="0.06367041" vertical-offset="1156" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -495,7 +495,9 @@
     </entry>
     <entry file="file://C:/Kivy/Python27/Lib/site-packages/nltk/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="578" column="0" selection-start="21202" selection-end="21202" vertical-scroll-proportion="0.0" vertical-offset="9504" max-vertical-offset="20213" />
+        <state line="578" column="0" selection-start="21202" selection-end="21202" vertical-scroll-proportion="0.0" vertical-offset="9504" max-vertical-offset="20213">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://C:/Kivy/Python27/Lib/site-packages/nltk/tokenize/__init__.py">
@@ -531,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="49" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="71" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
@@ -551,13 +546,6 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunkers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="2286" selection-end="2286" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="1768">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -579,10 +567,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="3549" selection-end="3549" vertical-scroll-proportion="0.4906367" vertical-offset="928" max-vertical-offset="1462">
+        <state line="70" column="12" selection-start="3507" selection-end="3507" vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="1479">
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="49" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunkers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="2286" selection-end="2286" vertical-scroll-proportion="0.06367041" vertical-offset="1156" max-vertical-offset="1768">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -65,9 +65,10 @@ class StoryApp(App):
     def on_text_change(self, sender, text):
         sentence_data, word_data, chunk_data = self.parser.parse(text)
 
-        self.window.parseView.content.text = " ".join(
-            (self.style_for(pos).format(word)
-             for (word, stem, pos) in word_data))
+        if chunk_data is None:
+            self.window.parseView.content.text = ''
+        else:
+            self.window.parseView.content.text = chunk_data.pprint()
 
         pass
 
