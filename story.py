@@ -1,6 +1,6 @@
 from kivy.app import App
 from pydispatch import dispatcher
-from nltk.corpus import conll2000
+import util
 
 import windows
 import models
@@ -63,7 +63,7 @@ class StoryApp(App):
         return self.window
 
     def on_text_change(self, sender, text):
-        sentence_data, word_data = self.parser.parse(text)
+        sentence_data, word_data, chunk_data = self.parser.parse(text)
 
         self.window.parseView.content.text = " ".join(
             (self.style_for(pos).format(word)
