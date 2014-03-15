@@ -1,9 +1,7 @@
-import chunkers
 import models
 
 import nltk
 from nltk.tag.simplify import simplify_wsj_tag
-from nltk.corpus import conll2000
 
 
 class ParseResults:
@@ -14,22 +12,19 @@ class ParseResults:
         self.success = (sentences is not None) and (words is not None) and (chunks is not None)
 
     def __repr__(self):
-        return "ParseResults(success=%r)" % self.success
+        return "ParseResults(sentences=%r, words=%r, chunks=%r)" % (self.sentences, self.words, self.chunks)
 
 
 class Parser:
     simplify_tags = True
 
-    def __init__(self):
-        self.stemmer = nltk.PorterStemmer()
-        self.sentence_tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+    def __init__(self, stemmer, sentence_tokenizer, chunker):
+        self.stemmer = stemmer
+        self.sentence_tokenizer = sentence_tokenizer
+        self.chunker = chunker
 
-        # todo: analyze more chunk types
-        # possible chunk types:
-        #       NP (noun phrase)
-        #       VP (such as 'has already delivered')
-        #       PP (such as 'because of')
-        self.chunker = chunkers.UnigramChunker(conll2000.chunked_sents('train.txt', chunk_types=['NP']))
+    def __repr__(self):
+        return "Parser(stemmer=%r, sentence_tokenizer=%r, chunker=%r", (self.stemmer, self.sentence_tokenizer, self.chunker)
 
     # output:
     # ([sentence], [(word, stem, pos)], nltk.Tree)
@@ -51,6 +46,7 @@ class Parser:
             in tokenized_words]
 
         # parse chunks
+        # todo: bug: chunker needs to parse each tokenized sentence!
         chunk_data = self.chunker.parse(tokenized_words)
 
         return ParseResults(sentence_data, word_data, chunk_data)
@@ -60,6 +56,9 @@ class EntityResolutionStrategy:
     def __init__(self):
         pass
 
+    def __repr__(self):
+        return "EntityResolutionStrategy()"
+
     def resolve_entities(self, chunks):
         if chunks is None:
             return []
@@ -67,10 +66,13 @@ class EntityResolutionStrategy:
         # walk NP subtrees
         entities = []
         for np_tree in chunks.subtrees(lambda subtree: subtree.node == 'NP'):
+            # pick out only nouns
             nns = [leaf for leaf in np_tree.leaves() if 'NN' in leaf[1]]
 
+            # if there are nouns in this subtree, create an entity
             if 0 != len(nns):
                 entity = models.Entity(
+                    # use the last noun in the NP subtree
                     nns[-1][0],
                     np_tree)
                 entities.append(entity)

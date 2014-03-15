@@ -34,6 +34,9 @@ class EntityRelation:
         self.b = b
         self.relation = relation
 
+    def __repr__(self):
+        return "EntityRelation(a=%r, b=%r, relation=%r)" % (self.a, self.b, self.relation)
+
 
 class Entity:
     def __init__(self, name, chunk):
@@ -52,3 +55,6 @@ class Model:
         self.sentences = []
         self.raw = ''
         self.entities = []
+
+    def __repr__(self):
+        return "Model()"

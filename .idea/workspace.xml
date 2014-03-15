@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8678fb15-2d39-4347-9b47-96671c3d47c1" name="Default" comment="Stubb">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chunkers.py" afterPath="$PROJECT_DIR$/chunkers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models.py" afterPath="$PROJECT_DIR$/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/story.py" afterPath="$PROJECT_DIR$/story.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strategy.py" afterPath="$PROJECT_DIR$/strategy.py" />
     </list>
@@ -31,16 +33,7 @@
           <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="4" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1003">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="chunkers.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/chunkers.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="41" selection-start="2026" selection-end="2026" vertical-scroll-proportion="0.0" vertical-offset="886" max-vertical-offset="1768">
+                <state line="30" column="0" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1105">
                   <folding />
                 </state>
               </provider>
@@ -49,26 +42,10 @@
           <file leaf-file-name="story.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/story.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="76" column="58" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.64041096" vertical-offset="816" max-vertical-offset="1615">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="robustapply.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/robustapply.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="56" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="1071">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dispatcher.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/dispatcher.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="342" column="0" selection-start="10867" selection-end="10867" vertical-scroll-proportion="0.0" vertical-offset="5604" max-vertical-offset="8432">
-                  <folding />
+                <state line="79" column="26" selection-start="3830" selection-end="3830" vertical-scroll-proportion="0.20376712" vertical-offset="1224" max-vertical-offset="1921">
+                  <folding>
+                    <element signature="e#0#24#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -80,9 +57,9 @@
           <file leaf-file-name="strategy.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/strategy.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="64" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.65068495" vertical-offset="793" max-vertical-offset="1496">
+                <state line="48" column="8" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.44658494" vertical-offset="561" max-vertical-offset="1530">
                   <folding>
-                    <element signature="e#0#15#0" expanded="true" />
+                    <element signature="e#0#13#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -117,11 +94,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/chunk/chunkers.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/chunkers.py" />
         <option value="$PROJECT_DIR$/tests/test.py" />
         <option value="$PROJECT_DIR$/chunker-tests.py" />
         <option value="$PROJECT_DIR$/.idea/util.py" />
         <option value="$PROJECT_DIR$/util.py" />
+        <option value="$PROJECT_DIR$/chunkers.py" />
         <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/story.py" />
         <option value="$PROJECT_DIR$/strategy.py" />
@@ -519,27 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chunkers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="41" selection-start="2026" selection-end="2026" vertical-scroll-proportion="0.0" vertical-offset="886" max-vertical-offset="1768">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/robustapply.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/dispatcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="342" column="0" selection-start="10867" selection-end="10867" vertical-scroll-proportion="0.0" vertical-offset="5604" max-vertical-offset="8432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/windows.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="26" selection-start="475" selection-end="475" vertical-scroll-proportion="0.4490566" vertical-offset="0" max-vertical-offset="833">
@@ -547,25 +503,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/dispatcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="342" column="0" selection-start="10867" selection-end="10867" vertical-scroll-proportion="0.30136988" vertical-offset="5604" max-vertical-offset="8432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/robustapply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.7962329" vertical-offset="487" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunkers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="0" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.40753424" vertical-offset="1054" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="4" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1003">
+        <state line="30" column="0" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="58" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.64041096" vertical-offset="816" max-vertical-offset="1615">
-          <folding />
+        <state line="79" column="26" selection-start="3830" selection-end="3830" vertical-scroll-proportion="0.20376712" vertical-offset="1224" max-vertical-offset="1921">
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/strategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="64" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.65068495" vertical-offset="793" max-vertical-offset="1496">
+        <state line="48" column="8" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.44658494" vertical-offset="561" max-vertical-offset="1530">
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

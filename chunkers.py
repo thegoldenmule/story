@@ -75,6 +75,9 @@ class UnigramChunker(nltk.ChunkParserI):
                       for sent in train_sentences]
         self.tagger = nltk.UnigramTagger(train_data)
 
+    def __repr__(self):
+        return "UnigramChunker()"
+
     def parse(self, sentence):
         pos_tags = [pos for (word, pos) in sentence]
         tagged_pos_tags = self.tagger.tag(pos_tags)

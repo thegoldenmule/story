@@ -1,10 +1,12 @@
 from kivy.app import App
 from pydispatch import dispatcher
-import util
+import nltk
+from nltk.corpus import conll2000
 
 import windows
 import models
 import strategy
+import chunkers
 
 
 class StoryApp(App):
@@ -45,7 +47,17 @@ class StoryApp(App):
         super(StoryApp, self).__init__(**kwargs)
 
         self.model = models.Model()
-        self.parser = strategy.Parser()
+        self.parser = strategy.Parser(
+            stemmer=nltk.PorterStemmer(),
+            sentence_tokenizer=nltk.data.load('tokenizers/punkt/english.pickle'),
+
+            # todo: analyze more chunk types
+            # possible chunk types:
+            #       NP (noun phrase)
+            #       VP (such as 'has already delivered')
+            #       PP (such as 'because of')
+            chunker=chunkers.UnigramChunker(conll2000.chunked_sents('train.txt', chunk_types=['NP']))
+        )
         self.entity_resolver = strategy.EntityResolutionStrategy()
 
         self.window = None
