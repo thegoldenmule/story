@@ -27,15 +27,22 @@ import nltk
 # mapped to AAA. This keeps the vocabulary small and improves the
 # accuracy of many language modeling tasks.
 
-class POS:
-    NOUN = "noun"
-    VERB = "verb"
+
+class EntityRelation:
+    def __init__(self, a, b, relation):
+        self.a = a
+        self.b = b
+        self.relation = relation
 
 
 class Entity:
-    def __init__(self, name, pos):
+    def __init__(self, name, chunk):
         self.name = name
-        self.pos = ''
+        self.chunk = chunk
+        self.relations = []
+
+    def __repr__(self):
+        return "Entity(name=%r, chunk=%r)" % (self.name, self.chunk)
 
 
 class Model:

@@ -1,6 +1,8 @@
+import chunkers
+import models
+
 import nltk
 from nltk.tag.simplify import simplify_wsj_tag
-import chunkers
 from nltk.corpus import conll2000
 
 
@@ -9,6 +11,10 @@ class ParseResults:
         self.sentences = sentences
         self.words = words
         self.chunks = chunks
+        self.success = (sentences is not None) and (words is not None) and (chunks is not None)
+
+    def __repr__(self):
+        return "ParseResults(success=%r)" % self.success
 
 
 class Parser:
@@ -54,8 +60,17 @@ class EntityResolutionStrategy:
     def __init__(self):
         pass
 
-    def resolve(self, taggedWords):
-        return (word for (word, pos) in taggedWords if pos == 'NN')
+    def resolve_entities(self, chunks):
+        if chunks is None:
+            return []
+
+        # walk NP subtrees
+        entities = []
+        for np_tree in chunks.subtrees(lambda subtree: subtree.node == 'NP'):
+            entity = models.Entity(np_tree.leaves()[-1][0], np_tree)
+            entities.append(entity)
+
+        return entities
 
 
 class RelationExtractionStrategy:

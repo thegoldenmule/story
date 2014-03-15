@@ -46,6 +46,7 @@ class StoryApp(App):
 
         self.model = models.Model()
         self.parser = strategy.Parser()
+        self.entity_resolver = strategy.EntityResolutionStrategy()
 
         self.window = None
 
@@ -61,12 +62,17 @@ class StoryApp(App):
         return self.window
 
     def on_text_change(self, sender, text):
+        # parse
         results = self.parser.parse(text)
 
-        if results.chunks is None:
+        # resolve entities
+        entities = self.entity_resolver.resolve_entities(results.chunks)
+
+        # output
+        if 0 == len(entities):
             self.window.parseView.content.text = ''
         else:
-            self.window.parseView.content.text = results.chunks.pprint()
+            self.window.parseView.content.text = '\n'.join((self.style_for('N').format(entity.name) for entity in entities))
 
         pass
 
