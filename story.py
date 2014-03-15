@@ -47,8 +47,6 @@ class StoryApp(App):
         self.model = models.Model()
         self.parser = strategy.Parser()
 
-        #train_sentences = conll2000.chunked_sents('train.txt', chunk_types=['NP'])
-        #self.chunker = strategy.ConsecutiveNPChunker(train_sentences)
         self.window = None
 
     def build(self):
@@ -63,12 +61,12 @@ class StoryApp(App):
         return self.window
 
     def on_text_change(self, sender, text):
-        sentence_data, word_data, chunk_data = self.parser.parse(text)
+        results = self.parser.parse(text)
 
-        if chunk_data is None:
+        if results.chunks is None:
             self.window.parseView.content.text = ''
         else:
-            self.window.parseView.content.text = chunk_data.pprint()
+            self.window.parseView.content.text = results.chunks.pprint()
 
         pass
 
