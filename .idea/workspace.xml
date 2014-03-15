@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8678fb15-2d39-4347-9b47-96671c3d47c1" name="Default" comment="Stubb">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models.py" afterPath="$PROJECT_DIR$/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/story.py" afterPath="$PROJECT_DIR$/story.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strategy.py" afterPath="$PROJECT_DIR$/strategy.py" />
     </list>
@@ -50,7 +49,7 @@
           <file leaf-file-name="story.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/story.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="74" column="99" selection-start="3611" selection-end="3611" vertical-scroll-proportion="0.50513697" vertical-offset="861" max-vertical-offset="1445">
+                <state line="76" column="58" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.64041096" vertical-offset="816" max-vertical-offset="1615">
                   <folding />
                 </state>
               </provider>
@@ -81,7 +80,7 @@
           <file leaf-file-name="strategy.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/strategy.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="58" selection-start="2129" selection-end="2129" vertical-scroll-proportion="0.59246576" vertical-offset="827" max-vertical-offset="1411">
+                <state line="69" column="64" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.65068495" vertical-offset="793" max-vertical-offset="1496">
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -557,14 +556,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="99" selection-start="3611" selection-end="3611" vertical-scroll-proportion="0.50513697" vertical-offset="861" max-vertical-offset="1445">
+        <state line="76" column="58" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.64041096" vertical-offset="816" max-vertical-offset="1615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/strategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="58" selection-start="2129" selection-end="2129" vertical-scroll-proportion="0.59246576" vertical-offset="827" max-vertical-offset="1411">
+        <state line="69" column="64" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.65068495" vertical-offset="793" max-vertical-offset="1496">
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

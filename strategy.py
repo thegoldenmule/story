@@ -67,8 +67,13 @@ class EntityResolutionStrategy:
         # walk NP subtrees
         entities = []
         for np_tree in chunks.subtrees(lambda subtree: subtree.node == 'NP'):
-            entity = models.Entity(np_tree.leaves()[-1][0], np_tree)
-            entities.append(entity)
+            nns = [leaf for leaf in np_tree.leaves() if 'NN' in leaf[1]]
+
+            if 0 != len(nns):
+                entity = models.Entity(
+                    nns[-1][0],
+                    np_tree)
+                entities.append(entity)
 
         return entities
 

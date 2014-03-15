@@ -72,9 +72,19 @@ class StoryApp(App):
         if 0 == len(entities):
             self.window.parseView.content.text = ''
         else:
-            self.window.parseView.content.text = '\n'.join((self.style_for('N').format(entity.name) for entity in entities))
+            text = '\n'.join((self.format(entity) for entity in entities))
+
+            text = text + '\n\n' + results.chunks.pprint()
+
+            self.window.parseView.content.text = text
 
         pass
+
+    def format(self, entity):
+        return '{} ({})'.format(
+            self.style_for('N').format(entity.name),
+            ','.join((self.style_for(pos).format(word) for (word, pos) in entity.chunk.leaves()))
+        )
 
     def style_for(self, pos):
         if self.style_table.has_key(pos):
