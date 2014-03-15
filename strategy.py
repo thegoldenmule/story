@@ -7,12 +7,19 @@ from nltk.tag.simplify import simplify_wsj_tag
 class ParseResults:
     def __init__(self, sentences, words, chunks):
         # list of sentences
+        # ['You suffered a meltdown.', 'Then the giraffe blew up.']
         self.sentences = sentences
 
         # list of list of (word, stem, pos) [one list for each sentence]
+        # [
+        #   [('You', 'NN'), ..],
+        #   [('Then', 'P'), ..],
+        #   ..
+        # ]
         self.words = words
 
         # list of chunk trees, one for each sentence
+        # [nltk.Tree(...), nltk.Tree(...), ...]
         self.chunks = chunks
 
         # successful parsing
@@ -58,6 +65,7 @@ class Parser:
         return ParseResults(sentence_data, word_data, chunk_data)
 
 
+# todo: map PRPs (pronouns) to corresponding noun
 class EntityResolutionStrategy:
     def __init__(self):
         pass

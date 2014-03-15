@@ -84,14 +84,17 @@ class StoryApp(App):
         if 0 == len(entities):
             self.window.parseView.content.text = ''
         else:
+            # print all the entities we found
             text = '\n'.join((self.format(entity) for entity in entities))
 
+            # then print the chunk trees
             text = text + '\n\n' + '\n\t'.join((chunk.pprint() for chunk in results.chunks))
 
             self.window.parseView.content.text = text
 
         pass
 
+    # formats an entity for printing using the style table
     def format(self, entity):
         return '{} ({})'.format(
             self.style_for('N').format(entity.name),

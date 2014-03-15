@@ -40,7 +40,7 @@
           <file leaf-file-name="story.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/story.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="77" column="36" selection-start="3797" selection-end="3797" vertical-scroll-proportion="0.37328768" vertical-offset="1091" max-vertical-offset="1921">
+                <state line="103" column="4" selection-start="4633" selection-end="4633" vertical-scroll-proportion="0.65068495" vertical-offset="1371" max-vertical-offset="1972">
                   <folding>
                     <element signature="e#0#24#0" expanded="true" />
                   </folding>
@@ -64,7 +64,7 @@
           <file leaf-file-name="strategy.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/strategy.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="51" column="60" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.42031524" vertical-offset="627" max-vertical-offset="1649">
+                <state line="21" column="8" selection-start="545" selection-end="545" vertical-scroll-proportion="0.6252189" vertical-offset="0" max-vertical-offset="1785">
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -540,7 +540,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/strategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="60" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.42031524" vertical-offset="627" max-vertical-offset="1649">
+        <state line="21" column="8" selection-start="545" selection-end="545" vertical-scroll-proportion="0.6252189" vertical-offset="0" max-vertical-offset="1785">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -549,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="36" selection-start="3797" selection-end="3797" vertical-scroll-proportion="0.37328768" vertical-offset="1091" max-vertical-offset="1921">
+        <state line="103" column="4" selection-start="4633" selection-end="4633" vertical-scroll-proportion="0.65068495" vertical-offset="1371" max-vertical-offset="1972">
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
