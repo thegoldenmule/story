@@ -86,7 +86,7 @@ class StoryApp(App):
         else:
             text = '\n'.join((self.format(entity) for entity in entities))
 
-            text = text + '\n\n' + results.chunks.pprint()
+            text = text + '\n\n' + '\n\t'.join((chunk.pprint() for chunk in results.chunks))
 
             self.window.parseView.content.text = text
 
