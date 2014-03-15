@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8678fb15-2d39-4347-9b47-96671c3d47c1" name="Default" comment="Stubb">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/story.py" afterPath="$PROJECT_DIR$/story.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strategy.py" afterPath="$PROJECT_DIR$/strategy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Story.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="strategy.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="strategy.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/strategy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="65" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1105">
+            <state line="31" column="48" selection-start="935" selection-end="935" vertical-scroll-proportion="0.15315315" vertical-offset="391" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="story.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/story.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="12" selection-start="3327" selection-end="3327" vertical-scroll-proportion="0.5405405" vertical-offset="754" max-vertical-offset="1343">
+            <state line="68" column="12" selection-start="3327" selection-end="3327" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
@@ -114,8 +112,8 @@
         <option value="$PROJECT_DIR$/chunker-tests.py" />
         <option value="$PROJECT_DIR$/.idea/util.py" />
         <option value="$PROJECT_DIR$/util.py" />
-        <option value="$PROJECT_DIR$/strategy.py" />
         <option value="$PROJECT_DIR$/story.py" />
+        <option value="$PROJECT_DIR$/strategy.py" />
       </list>
     </option>
   </component>
@@ -537,16 +535,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/strategy.py">
+    <entry file="file://$PROJECT_DIR$/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="65" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1105">
+        <state line="68" column="12" selection-start="3327" selection-end="3327" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1343">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/story.py">
+    <entry file="file://$PROJECT_DIR$/strategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="12" selection-start="3327" selection-end="3327" vertical-scroll-proportion="0.5405405" vertical-offset="754" max-vertical-offset="1343">
+        <state line="31" column="48" selection-start="935" selection-end="935" vertical-scroll-proportion="0.15315315" vertical-offset="391" max-vertical-offset="1105">
           <folding />
         </state>
       </provider>

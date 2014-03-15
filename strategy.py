@@ -29,7 +29,7 @@ class Parser:
     # ([sentence], [(word, stem, pos)], nltk.Tree)
     def parse(self, text):
         if not text:
-            return [], [], None
+            return ParseResults(None, None, None)
 
         # first, tokenize words w/complex tags
         tokenized_words = nltk.pos_tag(nltk.word_tokenize(text))
