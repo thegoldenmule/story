@@ -31,7 +31,7 @@
           <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="0" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1105">
+                <state line="48" column="0" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="521" max-vertical-offset="1105">
                   <folding />
                 </state>
               </provider>
@@ -40,10 +40,19 @@
           <file leaf-file-name="story.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/story.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="103" column="4" selection-start="4633" selection-end="4633" vertical-scroll-proportion="0.65068495" vertical-offset="1371" max-vertical-offset="1972">
+                <state line="103" column="112" selection-start="4670" selection-end="4670" vertical-scroll-proportion="0.5359589" vertical-offset="1438" max-vertical-offset="2244">
                   <folding>
                     <element signature="e#0#24#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="windows.py" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/windows.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="55" selection-start="394" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -64,7 +73,7 @@
           <file leaf-file-name="strategy.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/strategy.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="8" selection-start="545" selection-end="545" vertical-scroll-proportion="0.6252189" vertical-offset="0" max-vertical-offset="1785">
+                <state line="68" column="0" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.017513135" vertical-offset="1146" max-vertical-offset="1802">
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -503,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/windows.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="475" selection-end="475" vertical-scroll-proportion="0.4490566" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/dispatcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="342" column="0" selection-start="10867" selection-end="10867" vertical-scroll-proportion="0.30136988" vertical-offset="5604" max-vertical-offset="8432">
@@ -524,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Kivy/Python27/Lib/site-packages/pydispatch/robustapply.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="1071">
@@ -540,16 +535,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/strategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="545" selection-end="545" vertical-scroll-proportion="0.6252189" vertical-offset="0" max-vertical-offset="1785">
+        <state line="68" column="0" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.017513135" vertical-offset="1146" max-vertical-offset="1802">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/windows.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="55" selection-start="394" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="521" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/story.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="4" selection-start="4633" selection-end="4633" vertical-scroll-proportion="0.65068495" vertical-offset="1371" max-vertical-offset="1972">
+        <state line="103" column="112" selection-start="4670" selection-end="4670" vertical-scroll-proportion="0.5359589" vertical-offset="1438" max-vertical-offset="2244">
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>

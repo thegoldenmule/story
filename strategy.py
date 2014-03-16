@@ -66,6 +66,7 @@ class Parser:
 
 
 # todo: map PRPs (pronouns) to corresponding noun
+# todo: map multiple mentions of the same entity to the same instance
 class EntityResolutionStrategy:
     def __init__(self):
         pass

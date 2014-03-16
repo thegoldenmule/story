@@ -69,16 +69,18 @@ class StoryApp(App):
             sender=dispatcher.Any
         )
 
+        dispatcher.connect(
+            self.on_text_submitted,
+            signal=windows.NarrativeView.SIGNAL_TEXT_ENTERED,
+            sender=dispatcher.Any
+        )
+
         self.window = windows.MainWindow()
 
         return self.window
 
     def on_text_change(self, sender, text):
-        # parse
-        results = self.parser.parse(text)
-
-        # resolve entities
-        entities = self.entity_resolver.resolve_entities(results.chunks)
+        results, entities = self.resolve_entities(text)
 
         # output
         if 0 == len(entities):
@@ -93,6 +95,20 @@ class StoryApp(App):
             self.window.parseView.content.text = text
 
         pass
+
+    def on_text_submitted(self, sender, text):
+        results, entities = self.resolve_entities(text)
+
+        self.model.entities += entities
+
+        self.window.memoryView.content.text = '\n'.join((self.format(entity) for entity in self.model.entities))
+
+    def resolve_entities(self, text):
+        # parse
+        results = self.parser.parse(text)
+
+        # resolve entities
+        return results, self.entity_resolver.resolve_entities(results.chunks)
 
     # formats an entity for printing using the style table
     def format(self, entity):
