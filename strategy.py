@@ -1,7 +1,6 @@
 import models
 
 import nltk
-from nltk.tag.simplify import simplify_wsj_tag
 
 
 class ParseResults:
@@ -53,7 +52,7 @@ class Parser:
         # grab word data [[(word, stem, pos)]], i.e. a list of lists of (word, stem, pos), one list for
         # each sentence
         word_data = [[
-            (word, self.stemmer.stem(word), (simplify_wsj_tag(pos) if self.simplify_tags else pos))
+            (word, self.stemmer.stem(word), pos)
             for (word, pos)
             # todo: use default tagger for unknown words
             in sentence] for sentence in tokenized_sentences]
@@ -81,7 +80,7 @@ class EntityResolutionStrategy:
         # walk NP subtrees for each chunk tree
         entities = []
         for chunk in chunks:
-            for np_tree in chunk.subtrees(lambda subtree: subtree.node == 'NP'):
+            for np_tree in chunk.subtrees(lambda subtree: subtree.label() == 'NP'):
                 # pick out only nouns
                 nns = [leaf for leaf in np_tree.leaves() if 'NN' in leaf[1]]
 
