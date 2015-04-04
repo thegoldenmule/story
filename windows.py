@@ -9,6 +9,8 @@ class NarrativeView(BoxLayout):
     SIGNAL_TEXT_UPDATED = 'textUpdated'
     SIGNAL_TEXT_ENTERED = 'textEntered'
 
+    output = ObjectProperty(None)
+
     def __init__(self, **kwargs):
         super(NarrativeView, self).__init__(**kwargs)
 

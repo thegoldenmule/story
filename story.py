@@ -100,8 +100,10 @@ class StoryApp(App):
         results, entities = self.resolve_entities(text)
 
         self.model.entities += entities
+        self.model.raw += " " + text
 
         self.window.memoryView.content.text = '\n'.join((self.format(entity) for entity in self.model.entities))
+        self.window.narrativeView.output.text = self.model.raw
 
     def resolve_entities(self, text):
         # parse

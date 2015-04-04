@@ -5,6 +5,8 @@ Story is a research project that leverages the [Natural Language Toolkit](http:/
 techniques for gaming. The goal is to use natural language input to describe an environment to a computer, which then
 makes choices about how to use the environment to accomplish some goal.
 
+![Screenshot](img/screenshot.png)
+
 ### Reading
 ---
 [Natural Language Processing with Python](http://www.nltk.org/book/) (O'Reilly)
